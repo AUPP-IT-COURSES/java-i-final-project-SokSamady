@@ -25,7 +25,7 @@ public class Game extends JPanel implements Runnable, MouseListener {
 
     Piece[][] grid;
     BufferedImage background, cursor;
-    BufferedImage[] gemImages = new BufferedImage[7]; // Array for gem images
+    BufferedImage[] gemImages = new BufferedImage[7]; 
 
     MouseEvent mouse;
     int tileSize = 54;
@@ -232,7 +232,7 @@ public class Game extends JPanel implements Runnable, MouseListener {
                 if (grid[i][j].match >= 3) {
                     // Award points for matches (adjust the points as needed)
                     if (grid[i][j].match == 3) {
-                        matchScore += 90;
+                        matchScore += 100;
                     } else if (grid[i][j].match == 4) {
                         matchScore += 250;
                     }
